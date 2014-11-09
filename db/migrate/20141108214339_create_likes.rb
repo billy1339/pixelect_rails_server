@@ -10,3 +10,5 @@ class CreateLikes < ActiveRecord::Migration
 
   end
 end
+
+
