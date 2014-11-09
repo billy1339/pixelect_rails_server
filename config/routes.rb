@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'users#index'
+  root to: 'image_sets#index'
 
   devise_for :users
   resources :image_sets
