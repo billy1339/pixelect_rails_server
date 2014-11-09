@@ -6,15 +6,17 @@ gem 'rails', '4.2.0.beta2'
 
 gem 'rails-api'
 
-gem 'spring', :group => :development
+gem 'spring', group: :development
 
 gem 'pg'
 
-gem 'rack-cors', :require => 'rack/cors'
+gem 'rack-cors', require: 'rack/cors'
 
 gem 'rails_12factor', group: :production
 
 gem 'devise', '~> 3.4.1'
+
+gem 'aws-sdk'
 
 
 # To use ActiveModel has_secure_password
