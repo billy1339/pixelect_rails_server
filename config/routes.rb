@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
+  root to: 'users#index'
+
   devise_for :users
+  resources :image_sets
+  resources :images
+  resources :comments
+  resources :likes
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
