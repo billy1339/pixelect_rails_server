@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 20141108220231) do
 
   create_table "images", force: true do |t|
     t.string   "file_name"
+    t.string   "image_file"
     t.string   "image_url"
     t.integer  "flag"
     t.integer  "image_set_id"
