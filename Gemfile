@@ -18,6 +18,10 @@ gem 'devise', '~> 3.4.1'
 
 gem 'aws-sdk'
 
+gem 'carrierwave'
+
+gem 'rmagick'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
