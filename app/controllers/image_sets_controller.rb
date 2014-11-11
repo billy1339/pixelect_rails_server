@@ -48,7 +48,7 @@ class ImageSetsController < ApplicationController
   private
 
   def allowed_params
-    params.require(:image_set).permit(:voting_criteria)
+    params.require(:image_set).permit(:voting_criteria, :total_likes, :user_id)
   end
 
 end
