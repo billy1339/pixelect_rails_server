@@ -16,11 +16,9 @@ gem 'rails_12factor', group: :production
 
 gem 'devise', '~> 3.4.1'
 
-gem 'aws-sdk'
+gem 'aws-sdk-core'
 
-gem 'carrierwave'
-
-gem 'rmagick'
+gem 'dotenv-rails'
 
 
 # To use ActiveModel has_secure_password
