@@ -1,9 +1,9 @@
 class Amazon # no inheritance here bc this class does not connect to Postgres
 
   def self.get_s3_upload_key
-    bucket = ENV['MYBUCKET']
-    access_key = ENV['S3_ACCESS_KEY']
-    secret = ENV['S3_SECRET_ACCESS_KEY']
+    bucket = ENV['S3_BUCKET']
+    access_key = ENV['AWS_ACCESS_KEY_ID']
+    secret = ENV['AWS_SECRET_ACCESS_KEY']
     key = "uploads/#{SecureRandom.uuid}"
     expiration = 5.minutes.from_now.utc.strftime('%Y-%m-%dT%H:%M:%S.000Z')
     max_filesize = 2.megabytes
