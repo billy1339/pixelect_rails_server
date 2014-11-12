@@ -8,7 +8,9 @@ class ImageSetsController < ApplicationController
   def show
     @image_set = ImageSet.find(params[:id])
     if @image_set
-      render json: @image_set, status: :created, location: @image_set
+      # render :json => @programs, :include => {:insurer => {:only => :name}}
+        render :json => @image_set, :include => :images, status: :created, location: @image_set
+     # to render multiple things do :include => [:images, :comments]
     else
       render json: @image_set.errors, status: :unprocessable_entity
     end
